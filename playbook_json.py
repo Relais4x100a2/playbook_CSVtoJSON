@@ -7,7 +7,7 @@ import click
 @click.argument("input_file", type=click.File(mode="r", encoding='utf-8'), default=None)
 @click.argument("name_playbook", type=str)
 @click.argument("output_file", type=click.File(mode="w"), default=None)
-def json_playbook(input_file, name_playbook, output_file):
+def playbook_json(input_file, name_playbook, output_file):
     reader = csv.reader(input_file, delimiter=',')
     group_list = []
     for row in reader:
@@ -34,4 +34,4 @@ def json_playbook(input_file, name_playbook, output_file):
 
 
 if __name__ == '__main__':
-    json_playbook()
+    playbook_json()

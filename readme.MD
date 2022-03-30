@@ -17,5 +17,5 @@ Python CLI with 3 args :
 
 Example :
 ```shell
-python playbook_csvtojson.py "example.csv" "test" "example.json"
+python playbook_json.py "example.csv" "test" "example.json"
 ```
